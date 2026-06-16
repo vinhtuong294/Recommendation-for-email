@@ -1,4 +1,22 @@
-# Shopify App Template - React Router
+# Recommendation for Email
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/vinhtuong294/Recommendation-for-email/tree/main)
+
+Shopify app for generating post-purchase email recommendations for CamoSignal.
+
+## Production deploy
+
+Use the Deploy to Render button above. Render reads `render.yaml` and provisions:
+
+- `camosignal-recommendation-email` web service
+- `camosignal-recommendation-email-db` PostgreSQL database
+- `/healthz` health check
+
+When Render asks for `SHOPIFY_API_SECRET`, paste the current Shopify app secret from the Shopify Dev Dashboard. Rotate the old secret before production if it was shared in chat.
+
+## Template notes
+
+This project started from the Shopify App Template for React Router.
 
 This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using [React Router](https://reactrouter.com/). It was forked from the [Shopify Remix app template](https://github.com/Shopify/shopify-app-template-remix) and converted to React Router.
 
