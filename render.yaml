@@ -13,6 +13,8 @@ services:
         value: 20.19.0
       - key: NODE_ENV
         value: production
+      - key: HOST
+        value: 0.0.0.0
       - key: SHOPIFY_API_KEY
         value: b136f08de9540bd139b745aa15cb4043
       - key: SHOPIFY_API_SECRET
