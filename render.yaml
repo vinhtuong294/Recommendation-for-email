@@ -2,7 +2,7 @@ services:
   - type: web
     name: camosignal-recommendation-email
     runtime: node
-    plan: starter
+    plan: free
     region: oregon
     buildCommand: npm ci --include=dev && npx prisma generate && npm run build
     preDeployCommand: npx prisma migrate deploy
@@ -29,6 +29,6 @@ services:
 
 databases:
   - name: camosignal-recommendation-email-db
-    plan: basic-256mb
+    plan: free
     databaseName: camosignal_recommendation_email
     user: camosignal_recommendation_email
