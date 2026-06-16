@@ -5,8 +5,7 @@ services:
     plan: free
     region: oregon
     buildCommand: npm ci --include=dev && npx prisma generate && npm run build
-    preDeployCommand: npx prisma migrate deploy
-    startCommand: npm run start
+    startCommand: npm run docker-start
     healthCheckPath: /healthz
     autoDeployTrigger: commit
     envVars:
